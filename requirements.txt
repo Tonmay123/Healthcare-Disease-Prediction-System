@@ -1,5 +1,5 @@
 flask
-pickle
+pickle5
 numpy
 pandas
 sklearn
