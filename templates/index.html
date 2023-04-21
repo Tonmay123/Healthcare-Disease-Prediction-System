@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Healthcare Disease Prediction System</title>
+	<link rel="stylesheet" href="/static/styles.css">
+	<script src="/static/script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>HEALTHCARE DISEASE PREDICTION SYSTEM</h1>
+	</header>
+	
+	<main>
+		<img src="/static/image1.jpg" alt="Italian Trulli">
+		<br>
+		<h2>Select your symptoms:</h2>
+		<br>
+		<!-- <form id="symptom-form" action="http://127.0.0.1:5000/predict" method="post"> -->
+		<form id="symptom-form" action="http://127.0.0.1:5000/predict" method="post">
+			
+			<div id = "symptomns"></div>
+			
+			<!-- <input type="hidden" id="binary_value_0" name="binary_value_0" value='0'/>
+        	<button class="binary_value" name="binary_value" id="0" value="button">Itching</button>
+        	
+			<input type="hidden" id="binary_value_1" name="binary_value_1" value='0'/>
+        	<button class="binary_value" name="binary_value" id="1" value="button">Skin Rash</button> -->
+
+			<!-- <button type="submit">Predict Disease</button> -->
+
+			<h3>{{prediction_text}}</h3>
+
+			<h3>{{description_text}}</h3>
+
+
+		</form>
+		<div id="result"></div>
+	
+	<footer>
+		<p>&copy; 2023 Healthcare Disease Prediction System</p>
+	</footer>
+
+
+</body>
+</html>
